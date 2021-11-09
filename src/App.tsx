@@ -1,24 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
 
 function App() {
+  const [products, setProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/v1/products")
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+  }, []);
+
+  function addProduct() {
+    setProducts((prevState) => [
+      ...prevState,
+      {
+        id: prevState.length + 101,
+        name: "product" + (prevState.length + 1),
+        price: prevState.length * 100 + 100,
+        brand: "some brand",
+        description: "some description",
+        pictureUrl: "http://picsum.photos/200",
+      },
+    ]);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 style={{ color: "red" }}>Re-Store</h1>
+      <ul>
+        {products.map((product) => (
+          <li key={product.id}>
+            {product.name} - {product.price}
+          </li>
+        ))}
+      </ul>
+      <button onClick={addProduct}>Add product</button>
     </div>
   );
 }

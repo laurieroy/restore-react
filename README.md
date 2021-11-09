@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+# Restore - A React frontend for a ski shop
+
+Tech Stack:
+
+- Material UI 5
+- React 17
+<!-- Redux  -->
+<!-- Axios -->
+- Typescript
+
+<!-- See [API]() - Rails 6 -->
+
+<!-- Live [Demo]() - WIP -->
+
+<!-- ## To run locally on your machine:
+
+### `git clone `
+
+
+### `npm install` -->
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
