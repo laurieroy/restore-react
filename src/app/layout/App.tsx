@@ -5,6 +5,7 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import React, { useState } from "react";
+import { Route } from "react-router-dom";
 import Catalog from "../../features/catalog/Catalog";
 import Header from "./Header";
 
@@ -29,7 +30,11 @@ function App() {
       <CssBaseline />
       <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
       <Container>
-        <Catalog />
+        <Route path='/' exact component={} />
+        <Route path='/catalog' exact component={} />
+        <Route path='/catalog/:id' component={} />
+        <Route path='/about' component={} />
+        <Route path='/contact' component={} />
       </Container>
     </ThemeProvider>
   );
