@@ -1,31 +1,29 @@
-# Restore - A React frontend for a ski shop
+# Restore - A React frontend for a ski shop - WIP
+
+This was built from a code-along from a [tutorial]() by [Neil Cummings]() at [TryCatchLearn.com](https://trycatchlearn.com/)
 
 Tech Stack:
 
 - Material UI 5
 - React 17
+- React-hook-form
 <!-- Redux  -->
-<!-- Axios -->
+- Axios
 - Typescript
 
-<!-- See [API]() - Rails 6 -->
+See [API](https://github.com/laurieroy/dotnet-restore-api/tree/main/API) - c# .NET 6 (boilplate from 5)
 
 <!-- Live [Demo]() - WIP -->
 
-<!-- ## To run locally on your machine:
+ ## To run locally on your machine (must have node > v 10):
 
-### `git clone `
+### ```git clone git@github.com:laurieroy/restore-react.git```
+
+### ```cd restore-react```
 
 
-### `npm install` -->
+### `npm install` 
 
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
@@ -39,7 +37,7 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
+<!-- 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -58,9 +56,10 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it. -->
 
 ## Learn More
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 

@@ -9,10 +9,10 @@ import { Route } from "react-router-dom";
 
 import AboutPage from "../../features/about/AboutPage";
 import Catalog from "../../features/catalog/Catalog";
-import ProductDetails from "../../features/catalog/ProductDetails";
 import ContactPage from "../../features/contact/ContactPage";
 import HomePage from "../../features/home/HomePage";
 import Header from "./Header";
+import ProductDetails from "../../features/catalog/ProductDetails";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
