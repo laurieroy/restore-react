@@ -8,9 +8,11 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import axios from "axios";
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import axios from "axios";
+
 import { Product } from "../../app/models/product";
 
 export default function ProductDetails() {
@@ -20,7 +22,7 @@ export default function ProductDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/v1/products/${id}`)
+      .get(`http://localhost:5000/api/products/${id}`)
       .then((resp) => setProduct(resp.data))
       .catch((error) => console.log(error))
       .finally(() => setLoading(false));
