@@ -9,11 +9,13 @@ import {
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+
 import { Product } from "../../app/models/product";
 
 interface Props {
   product: Product;
 }
+
 export default function ProductCard({ product }: Props) {
   return (
     <Card>

@@ -9,8 +9,8 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+
 import { ShoppingCart } from "@mui/icons-material";
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 interface Props {
